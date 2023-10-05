@@ -1,5 +1,5 @@
 :root{
-    --width: calc(50% + 20px);
+    --width: calc(75% + 20px);
 }
 * {
 padding:0;
@@ -87,7 +87,7 @@ p {
 }
 .footer__box, .nav__box{
     height:7.5rem;
-    width:80%;
+    width:var(--width);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,7 +97,7 @@ p {
     min-height: 100dvh;
 }
 .header__intro{
-    width:80%;
+    width:var(--width);
     height: 65dvh;
     display: grid;
     margin:auto;
@@ -138,13 +138,13 @@ picture .hero-img{
     position: absolute;
 }
 .auto-grid{
-    width: calc(90% + 20px);
-    /* width:80%; */
+    /* min-width: calc(90% + 20px); */
+    max-width:var(--width);
     padding:3rem 0 7rem;
     display: grid;
     place-items: center;
     margin: auto;
-    gap:4rem 1rem;
+    gap:4rem .5rem;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 3fr));
 }
 .courses{
