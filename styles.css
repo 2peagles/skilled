@@ -140,7 +140,7 @@ picture .hero-img{
 .auto-grid{
     width: calc(90% + 20px);
     /* width:80%; */
-    padding:7rem 0;
+    padding:3rem 0 7rem;
     display: grid;
     place-items: center;
     margin: auto;
