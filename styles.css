@@ -128,27 +128,21 @@ p {
 /* source:not([media]) {
     border: 2px solid blue;
 } */
-
+/* 
 source[media="(min-width:1000px)"]{
-    /* height:58.5rem;
-    width:61.9rem;
-    top:-17rem;
-    right:-30rem;
-    position: absolute; */
     height: 400px;
     width:900px;
     outline:1px solid black;
 }
 
 source[media="(min-width: 300px)"] {
-    /* outline: 6px solid black; */
     height: 150px;
     width: 150px;
     position: relative;
-}
+} */
 picture .hero-img{
-    height:58rem;
-    width: 61.9rem;
+    height:58.6rem;
+    width: 62rem;
     top: -15rem;
     right: -30rem;
     position: absolute;
