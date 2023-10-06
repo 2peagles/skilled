@@ -30,18 +30,27 @@
                 <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
                 <button onclick="redirectToExample()" class="btn btn__hero"> get started </button>
             </div>
+            <!-- <img src="./assets/image-hero-desktop.png" alt="hero image" class="large_img">
+            <img src="./assets/image-hero-tablet.png" alt="hero image"class="mid_img">
+            <img src="./assets/image-hero-mobile@2x.png" alt="hero image" class="small_img"> -->
             <picture class="header__img">
-                <source srcset="./assets/image-hero-mobile.png" media="(max-width: 600px)"class='small-img'>
-                <!-- <source srcset="./assets/image-hero-tablet.png" media="(max-width: 700px)" class="mobileimg"> -->
-                <!-- <source srcset="./assets/image-hero-mobile.png" media="{min-width:1000px}"> -->
-                <img src="./assets/image-hero-desktop.png" alt="hero image" class="hero-img">
+                <source srcset="./assets/image-hero-mobile.png" media="{min-width:1000px}">
+                <source srcset="./assets/image-hero-tablet.png" media="(min-width: 600px)" class="mobileimg">
+                <source srcset="./assets/image-hero-mobile.png" media="(min-width: 300px)"class='small-img'>
+                <img src="./assets/image-hero-desktop.png" alt="hero image"  class="hero-img">
             </picture>
         </section>
     </header>
     <main class="auto-grid">
-        <div class="courses courses__intro">
+            <div class="courses ">
+                <div class="courses__intro">
+                        <span>Check out our most popular courses!</span>
+                </div>
+                <!-- <span>Check out our most popular courses!</span> -->
+            </div>
+        <!-- <div class="courses courses__intro">
             <span>Check out our most popular courses!</span>
-        </div>
+        </div> -->
         <div class="courses">
             <div class="course course__one">
                 <span><img src="./assets/icon-animation.svg" alt=" dark logo" /></span>

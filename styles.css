@@ -1,6 +1,18 @@
 :root{
-    /* --width: calc(89% - 20px); */
-    --width:75%;
+    --width:70%;
+}
+@media (max-width:800px) {
+    :root{
+        --width: calc(70% + 20%);
+    }
+    .courses:first-child {
+       place-content: flex-start;
+       background-color: transparent;
+    }
+    .courses__intro{
+        max-height:12rem;
+        border-radius: 0.9375rem;
+    }
 }
 * {
 padding:0;
@@ -97,9 +109,10 @@ p {
     height:800px;
 }
 .header__intro{
-    width:var(--width);
+    max-width:var(--width);
     min-height: 65dvh;
     display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 2fr)); */
     margin:auto;
     align-items: self-end;
     justify-items: left;
@@ -116,18 +129,21 @@ p {
     border: 2px solid blue;
 } */
 
-/* source[media="(max-width:1000px)"]{
-    height:58.5rem;
+source[media="(min-width:1000px)"]{
+    /* height:58.5rem;
     width:61.9rem;
     top:-17rem;
     right:-30rem;
-    position: absolute;
-} */
+    position: absolute; */
+    height: 400px;
+    width:900px;
+    outline:1px solid black;
+}
 
-source[media="(max-width: 600px)"] {
+source[media="(min-width: 300px)"] {
     /* outline: 6px solid black; */
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
     position: relative;
 }
 picture .hero-img{
@@ -138,16 +154,15 @@ picture .hero-img{
     position: absolute;
 }
 .auto-grid{
-    /* min-width: calc(90% + 20px); */
     max-width:var(--width);
     padding:3rem 0 9rem;
     display: grid;
     place-items: center;
     margin: auto;
     gap:5.5rem 0;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 3fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
 }
-.courses{
+.courses , .courses__intro{
     position: relative;
     overflow: visible;
     display: grid;
@@ -161,8 +176,12 @@ picture .hero-img{
     background: var(--FFFFFF, #FFF);
     box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
 }
+.courses:first-child{
+    padding:0;
+}
 .courses__intro{
-    padding-bottom: 5rem;
+    padding:2rem;
+    /* padding-bottom: 10rem; */
     color:  #FFF;
     font-size: 2rem;
     font-style: normal;
@@ -175,6 +194,5 @@ picture .hero-img{
     position: absolute;
 }
 .footer {
-    /* height: 7.5rem; */
     background-color: #13183F;
 }
