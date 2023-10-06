@@ -33,10 +33,10 @@
             <!-- <img src="./assets/image-hero-desktop.png" alt="hero image" class="large_img">
             <img src="./assets/image-hero-tablet.png" alt="hero image"class="mid_img">
             <img src="./assets/image-hero-mobile@2x.png" alt="hero image" class="small_img"> -->
-            <picture class="header__img">
-                <source srcset="./assets/image-hero-mobile.png" media="{min-width:1000px}">
-                <source srcset="./assets/image-hero-tablet.png" media="(min-width: 600px)" class="mobileimg">
-                <source srcset="./assets/image-hero-mobile.png" media="(min-width: 300px)"class='small-img'>
+            <picture >
+                <!-- <source srcset="./assets/image-hero-desktop.png" media="{min-width:1000px}">
+                <source srcset="./assets/image-hero-tablet.png" media="(min-width: 600px)" class="mobileimg"> -->
+                <source srcset="./assets/image-hero-mobile.png" media="(width < 400px)"class='small-img'>
                 <img src="./assets/image-hero-desktop.png" alt="hero image"  class="hero-img">
             </picture>
         </section>
