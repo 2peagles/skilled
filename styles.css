@@ -94,7 +94,7 @@ p {
     justify-content: space-between;
 }
 .header{
-    height:750px;
+    height:800px;
 }
 .header__intro{
     width:var(--width);
