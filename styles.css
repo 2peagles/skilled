@@ -93,13 +93,12 @@ p {
     align-items: center;
     justify-content: space-between;
 }
-
 .header{
-    min-height: 100dvh;
+    height:750px;
 }
 .header__intro{
     width:var(--width);
-    height: 65dvh;
+    min-height: 65dvh;
     display: grid;
     margin:auto;
     align-items: self-end;
