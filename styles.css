@@ -116,7 +116,6 @@ p {
     margin:auto;
     align-content:flex-end;
     position: relative;
-    outline:1px solid red;
 }
 
 .header__intro_box{
@@ -124,7 +123,6 @@ p {
     min-width: 17.1rem;
     max-width: 40%;
     height: 22.4375rem;
-    outline: 1px solid red;
 }
 /* source:not([media]) {
     border: 2px solid blue;
