@@ -159,7 +159,7 @@ picture .hero-img{
     display: grid;
     place-items: center;
     margin: auto;
-    gap:5.5rem 0;
+    gap:5.5rem .5rem;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
 }
 .courses , .courses__intro{
@@ -169,7 +169,7 @@ picture .hero-img{
     place-content: center;
     padding:0 2rem;
     min-width: 80%;
-    max-width: 21rem;
+    max-width: 20rem;
     /* min-height: 400px; */
     height: 20rem;
     border-radius: 0.9375rem;
