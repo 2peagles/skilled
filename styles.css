@@ -1,5 +1,5 @@
 :root{
-    --width:70%;
+    --width:75%;
 }
 @media (max-width:800px) {
     :root{
